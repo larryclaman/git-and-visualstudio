@@ -6,7 +6,7 @@ Create new branches to isolate changes for a feature or a bug fix from your mast
 
 Since the branches are lightweight, switching between branches is quick and easy. 
 Git does not create multiple copies of your source when working with branches&mdash;it uses the history information stored in commits to recreate the files on a branch when you start working on it.
-Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bug fixes.
+Your [Git workflow]([gitworkflow.md](https://docs.microsoft.com/en-us/azure/devops/repos/git/gitworkflow?view=azure-devops)) should create and use branches for managing features and bug fixes.
 The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pullrequest.md) all work through branches.
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
@@ -34,7 +34,7 @@ When your work in the branch is ready to share with the rest of the team, you [p
 A common mistake is to make some changes and `commit` them, realize you are on an incorrect branch, then `checkout` to the correct branch.
 Your most recent changes will no longer be on the filesystem since each branch has its own version of code. 
 Git will bring the state of the files back to the last commit on the branch you swapped into, not the previous branch where you made your changes. 
-You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch or [merge](pulling.md#update-branches-with-merge) the changes into the correct branch.
+You'll need to either [cherry-pick]([cherry-pick.md](https://docs.microsoft.com/en-us/azure/devops/repos/git/cherry-pick?view=azure-devops)) the commits from the branch or [merge](pulling.md#update-branches-with-merge) the changes into the correct branch.
 
 ## Create a branch
 
@@ -49,7 +49,7 @@ Example:
     
 ![Creating Git Branches in Visual Studio](media/vsbranch.gif)   
 
-#### [Command Line -- FYI](#tab/command-line/)
+#### Command Line -- FYI
 Use the `branch` command to create the branch and `checkout` to swap to that branch.
 
 ```

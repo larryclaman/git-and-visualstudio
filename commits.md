@@ -38,10 +38,7 @@ Commits include the following information:
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
 
-## FLAG - first link?
-[Learn more about Git history]([/azure/devops/learn/git/understand-git-history](https://docs.microsoft.com/en-us/azure/devops/learn/git/understand-git-history)) and how to [review history](history.md) to investigate changes made to your code.
-
-<a name="stage-your-changes-and-commit"></a>
+> [Learn more about Git history]([/azure/devops/learn/git/understand-git-history](https://docs.microsoft.com/en-us/azure/devops/learn/git/understand-git-history)) and how to [review history]([history.md](https://docs.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops)) to investigate changes made to your code.
 
 ## Staging your changes
 
@@ -49,9 +46,9 @@ Git does not automatically add changed files to the snapshot when you create a c
 You must first stage your changes to let Git know which updates you want to add to the next commit. 
 Staging lets you to selectively add files to a commit while excluding changes made in other files.
 
-[Ignore](ignore-files.md) temp files, logs, and other files that might change on your local machine but you don't want to add to version control.
 
-### [Visual Studio](#tab/visual-studio)
+
+### Using Visual Studio
 
 Visual Studio keeps track of file changes to your project as you do your work. When you are ready to stage changes, open up the **Changes** view in Team Explorer. 
 
@@ -59,7 +56,6 @@ Stage individual file changes by right-clicking a file in the **Change** view an
 Staging a change creates a **Staged Changes** section in Team Explorer. Only changes in the **Staged Changes** section are added to the next commit. 
 
 ![Stage files for your next commit using Team Explorer](media/vs-stage-files.gif)
-
 
 Stage multiple files or folders by selecting them then right-clicking and choosing **Stage** or by dragging and dropping files from the **Changes** list into the **Staged Changes** list. 
 
@@ -75,7 +71,7 @@ to your repo in an earlier commit, ignoring the file will not remove it from the
 *The lab will continue in the next section*
 
 
-### [Command Line -- FYI](#tab/command-line)
+### Command Line -- FYI
 
 Using the git cli, stage all pending changes in your repo with the following command:
 
@@ -95,9 +91,7 @@ Run the `status` command after you stage files to review your changes before mak
 
 ---
 
-## Create a commit
-
-#### [Visual Studio](#tab/visual-studio)
+## Create a commit using Visual Studio
 
 Open the **Changes** view in Team Explorer.
 
@@ -119,7 +113,7 @@ These options are available in the drop-down on the **Commit** button.
 
 *The lab will continue in the next section*
 
-#### [Command Line -- FYI](#tab/command-line)
+#### Command Line -- FYI
 
 Run the `status` command before `commit` to review your staged and unstaged changes. Checking `status` before creating a commit helps avoid trouble.
 
@@ -138,7 +132,7 @@ terminal so you can enter a commit message.
 Amend your last commit to correct small errors without making a new commit.
 
 > [!WARNING]
-> Do not amend [pushed](pushing.md) commits. If you need to update pushed code, [undo the changes with revert](undo.md) or create and push another commit.
+> Do not amend [pushed](pushing.md) commits. If you need to update pushed code, [undo the changes with revert]([undo.md](https://docs.microsoft.com/en-us/azure/devops/repos/git/undo?view=azure-devops)) or create and push another commit.
 
 #### [Visual Studio](#tab/visual-studio/)
 1. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
@@ -152,7 +146,7 @@ Amend your last commit to correct small errors without making a new commit.
 2. Stage the changed file
 3. From the Visual Studio Team Explorer, enter a commit message, but do not press 'Commit Saved'.  Instead, select 'Actions', then 'Ammend Previous Commit'
 
-#### [Command Line -- FYI](#tab/command-line/)
+#### Command Line -- FYI
 1. Stage your changes using `git add` just as you would if you were creating a new commit.
 2. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
 
