@@ -14,6 +14,10 @@ For this lab, you will use a test account.  Select one of the following:
 - [ ] NestorW@sbsgitdemo.OnMicrosoft.com
 - [ ] PattiF@sbsgitdemo.OnMicrosoft.com
 
+
+Log into azure devops to create your organization  https://devops.azure.com
+
+
 <a name="Ex0Task1"></a>
 ### Task 1: Configuring the Parts Unlimited team project ###
 
