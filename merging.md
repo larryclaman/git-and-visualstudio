@@ -39,7 +39,7 @@ Rebased branches will merge into your main branch without conflicts.
 
 #### Lab Exercise 
 
-1. First you'll need to manually force a merge conflict.  From your browsers, navigate to "Repo -> Files", then drill down to the file src/PartsUnlimitedWebsite/Startup.cs, and then press 'Edit'.  Insert a new first line as follows, and commit your change.
+1. First you'll need to manually force a merge conflict.  From your browsers, navigate to "Repo -> Files", then drill down to the file src/PartsUnlimitedWebsite/Startup.cs, and then press 'Edit'.  Insert a new first line as follows, and commit your change.  (The following is the line to add at the top of the file; eg, a comment.)
    > // Online
 
 
